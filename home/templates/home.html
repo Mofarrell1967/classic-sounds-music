@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<!-- Header -->
+<header class="masthead">
+	<div class="d-flex h-100 align-items-center">
+		<div class="mx-auto text-center">
+			<h1 class="mx-auto my-0 text-uppercase">Classic Sounds</h1>
+			<h2 class="text-white-50 mx-auto mt-2 mb-5">The definitive source of high end professional instruments.</h2>
+			<div class="container">
+
+				{% if user.is_authenticated %}
+				<a href="{% url 'products' %}" class="btn btn-primary js-scroll-trigger home_buttons">Collection</a>
+				<a href="{% url 'guitars' %}" class="btn btn-primary js-scroll-trigger home_buttons">Guitars</a>
+				<a href="{% url 'percussion' %}" class="btn btn-primary js-scroll-trigger home_buttons">Percussion</a>
+				<a href="{% url 'keyboards' %}" class="btn btn-primary js-scroll-trigger home_buttons">Keyboards</a>
+
+				{% else %}
+				<a href="{% url 'login' %}" class="btn btn-primary js-scroll-trigger">Login</a>
+				<a href="{% url 'register' %}" class="btn btn-primary js-scroll-trigger">Register</a>
+				{% endif %}
+			</div>
+		</div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about-section text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 mx-auto">
+				<h2 class="text-white mb-4">About Classic Sounds</h2>
+				<p class="text-white-50">Classic Sounds is an Irish on-line store that sources and sells high end
+					professional instruments. Our collection covers guitars, percussion and keyboards
+					and we stock a wide range of products from the best musical manufacturers and designers from all
+					over the globe.</p>
+			</div>
+		</div>
+		<img src="static/img/drum1.jpg" class="img-fluid" style="padding-bottom:50px" alt="">
+    </div>
+</section>
+<div style="width:100%; height:3px; background-color:#1B230E"></div>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light">
+	<div class="container">
+
+		<!-- All Instruments -->
+		<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+			<div class="col-lg-6">
+				<img class="img-fluid" src="static/img/11.jpg" alt="">
+        </div>
+				<div class="col-lg-6 order-lg-first">
+					<div class="bg-black text-center h-100 project">
+						<div class="d-flex h-100">
+							<div class="project-text w-100 my-auto text-center text-lg-right">
+								<h4 class="text-white">Collection</h4>
+								<p class="mb-0 text-white-50">Another example of a project with its respective
+									description. These sections work well responsively as well, try this theme on a
+									small screen!</p>
+								<br>
+								<a href="{% url 'products' %}" class="btn btn-primary js-scroll-trigger">View
+									Collection</a>
+								<br>
+								<hr class="d-none d-lg-block mb-0 mr-0">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Guitar Section -->
+			<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+				<div class="col-lg-6">
+					<img class="img-fluid" src="static/img/Guitars.jpg" alt="">
+        </div>
+					<div class="col-lg-6">
+						<div class="bg-black text-center h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-center text-lg-left">
+									<h4 class="text-white">Guitars</h4>
+									<p class="mb-0 text-white-50">Browse our collection of guitars from around the
+										world. We stock accoustic & electric guitars
+										in all styles and string profiles.</p>
+									<br>
+									<a href="{% url 'guitars' %}" class="btn btn-primary js-scroll-trigger">View
+										Guitars</a>
+									<br>
+									<hr class="d-none d-lg-block mb-0 ml-0">
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Percussion Section -->
+				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+					<div class="col-lg-6">
+						<img class="img-fluid" src="static/img/drums.jpg" alt="">
+        </div>
+						<div class="col-lg-6 order-lg-first">
+							<div class="bg-black text-center h-100 project">
+								<div class="d-flex h-100">
+									<div class="project-text w-100 my-auto text-center text-lg-right">
+										<h4 class="text-white">Percussion</h4>
+										<p class="mb-0 text-white-50">Another example of a project with its respective
+											description. These sections work well responsively as well, try this theme
+											on a small screen!</p>
+										<br>
+										<a href="{% url 'percussion' %}" class="btn btn-primary js-scroll-trigger">View
+											Percussion</a>
+										<br>
+										<hr class="d-none d-lg-block mb-0 mr-0">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Keyboard Section -->
+					<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+						<div class="col-lg-6">
+							<img class="img-fluid" src="static/img/keyboard.jpg" alt="">
+        </div>
+							<div class="col-lg-6">
+								<div class="bg-black text-center h-100 project">
+									<div class="d-flex h-100">
+										<div class="project-text w-100 my-auto text-center text-lg-left">
+											<h4 class="text-white">Keyboards</h4>
+											<p class="mb-0 text-white-50">An example of where you can put an image of a
+												project, or anything else, along with a description.</p>
+											<br>
+											<a href="{% url 'keyboards' %}"
+												class="btn btn-primary js-scroll-trigger">View Keyboards</a>
+											<br>
+											<hr class="d-none d-lg-block mb-0 ml-0">
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+</section>
+<div style="width:100%; height:3px; background-color:#1B230E"></div>
+
+<!-- Signup Section -->
+<section id="signup" class="signup-section">
+	<div class="container">
+
+	</div>
+</section>
+
+<!-- Contact Section -->
+
+<section class="contact-section bg-black">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-4 mb-3 mb-md-0">
+				<div class="card py-4 h-100">
+					<div class="card-body text-center">
+						<i class="fas fa-map-marked-alt text-primary mb-2"></i>
+						<h4 class="text-uppercase m-0">Address</h4>
+						<hr class="my-4">
+						<div class="small text-black-50">No. 1, New Street, Kilkenny, Ireland</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 mb-3 mb-md-0">
+				<div class="card py-4 h-100">
+					<div class="card-body text-center">
+						<i class="fas fa-envelope text-primary mb-2"></i>
+						<h4 class="text-uppercase m-0">Email</h4>
+						<hr class="my-4">
+						<div class="small text-black-50">
+							<a href="#">info@classic.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 mb-3 mb-md-0">
+				<div class="card py-4 h-100">
+					<div class="card-body text-center">
+						<i class="fas fa-mobile-alt text-primary mb-2"></i>
+						<h4 class="text-uppercase m-0">Phone</h4>
+						<hr class="my-4">
+						<div class="small text-black-50">+353(59) 123-1234</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="social d-flex justify-content-center">
+			<a target="_blank" href="https://twitter.com/" class="mx-2">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a target="_blank" href="https://www.facebook.com/" class="mx-2">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a target="_blank" href="https://github.com/" class="mx-2">
+				<i class="fab fa-github"></i>
+			</a>
+		</div>
+
+	</div>
+</section>
+</body>
+
+</html>
+
+{% endblock %}
