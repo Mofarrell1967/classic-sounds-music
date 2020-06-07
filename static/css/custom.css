@@ -1,0 +1,110 @@
+.product {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.product_checkout {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.mast_pages {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.3) 0%,
+      rgba(22, 22, 22, 0.7) 75%,
+      #161616 100%
+    ),
+    url("../img/light-grey.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.3) 0%,
+      rgba(22, 22, 22, 0.7) 75%,
+      #161616 100%
+    ),
+    url("../img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+caption p {
+  word-wrap: break-word;
+}
+
+.row.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.panel-default {
+  border-color: transparent;
+  padding: 0 10px;
+}
+
+.panel-body {
+  height: 100%;
+  border: 1px solid #ddd;
+}
+
+.product-description {
+  min-height: 40px;
+}
+
+.icon-bar {
+  background-color: #fff;
+}
+
+.accountform {
+  padding-top: 20px;
+}
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+
+.home_buttons {
+  padding: 5px;
+  margin: 5px;
+}
+
+.nav-text {
+  color: #4d4d4d;
+  font-weight: bold;
+}
