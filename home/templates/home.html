@@ -15,6 +15,7 @@
 				<a href="{% url 'guitars' %}" class="btn btn-primary js-scroll-trigger home_buttons">Guitars</a>
 				<a href="{% url 'percussion' %}" class="btn btn-primary js-scroll-trigger home_buttons">Percussion</a>
 				<a href="{% url 'keyboards' %}" class="btn btn-primary js-scroll-trigger home_buttons">Keyboards</a>
+                <a href="{% url 'profile' %}" class="btn btn-primary js-scroll-trigger home_buttons">Profile</a>
 
 				{% else %}
 				<a href="{% url 'login' %}" class="btn btn-primary js-scroll-trigger">Login</a>
@@ -36,7 +37,7 @@
 					over the globe.</p>
 			</div>
 		</div>
-		<img src="static/img/drum1.jpg" class="img-fluid" style="padding-bottom:50px" alt="">
+		<img src="static/img/about.jpg" class="img-fluid" style="padding-bottom:50px" alt="">
     </div>
 </section>
 <div style="width:100%; height:3px; background-color:#1B230E"></div>
@@ -48,7 +49,7 @@
 		<!-- All Instruments -->
 		<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
 			<div class="col-lg-6">
-				<img class="img-fluid" src="static/img/11.jpg" alt="">
+				<img class="img-fluid" src="static/img/all.jpg" alt="">
         </div>
 				<div class="col-lg-6 order-lg-first">
 					<div class="bg-black text-center h-100 project">
@@ -142,6 +143,7 @@
 							</div>
 						</div>
 </section>
+
 <div style="width:100%; height:3px; background-color:#1B230E"></div>
 
 <!-- Signup Section -->
@@ -208,8 +210,6 @@
 
 	</div>
 </section>
-</body>
 
-</html>
 
 {% endblock %}
