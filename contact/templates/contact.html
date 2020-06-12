@@ -1,0 +1,84 @@
+{% extends 'base.html' %} {% block content %}
+<header class="mast_pages" style="padding-top: 100px">
+	<div class="container">
+		<div class="mx-auto text-center">
+			<h2 class="text-white-20 mx-auto mt-2 mb-5">Contact Us</h2>
+			<div class="row row-flex align-items-center">
+				<div class="row row-flex align-items-center">
+			
+    <p class="text-center w-responsive mx-auto mb-5">
+      Do you have any questions? Please do not hesitate to contact us directly.
+      Our team will come back to you within a matter of hours to help you.
+    </p>
+    <div class="container">
+   
+      <div class="col-md-9 mb-md-0 mb-5 align-items-center">
+        <form action="{% url 'send_email' %}" required method="POST">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <label for="name" class="">Your name</label>
+                <input
+                  type="text"
+                  id="form_name"
+                  name="user_name"
+                  class="form-control"
+                  required
+                  placeholder="Your name"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <label for="email" class="">Your email</label>
+                <input
+                  type="email"
+                  id="form_email"
+                  name="user_email"
+                  class="form-control"
+                  required
+                  placeholder="name@example.com"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="md-form mb-0">
+                <label for="subject" class="">Subject</label>
+                <input
+                  type="text"
+                  id="form_subject"
+                  name="subject"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="md-form">
+                <label for="message">Your message</label>
+                <textarea
+                  rows="3"
+                  id="form_message"
+                  name="text"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center text-md-left contact-send">
+                <button type="submit" class="btn btn-primary js-scroll-trigger">Send</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </section>
+</div>
+</header>
+{% endblock %}
