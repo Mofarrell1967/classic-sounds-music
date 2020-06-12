@@ -13,23 +13,36 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):
-    """A view that displays the index page"""
+    """
+    A view that displays the index page
+
+    """
     return render(request, "index.html")
 
+
 def home(request):
-    """A view that displays the index page"""
+    """
+    A view that displays the index page
+    """
+
     return render(request, "home.html")
 
 
 def logout(request):
-    """A view that logs the user out and redirects back to the index page"""
+    """
+    A view that logs the user out and redirects back to the index page
+    """
+
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
     return redirect(reverse('home'))
 
 
 def login(request):
-    """A view that manages the login form"""
+    """
+    A view that manages the login form
+    """
+
     if request.method == 'POST':
         user_form = UserLoginForm(request.POST)
         if user_form.is_valid():
@@ -40,13 +53,14 @@ def login(request):
                 auth.login(request, user)
                 messages.error(request, "You have successfully logged in")
 
-                if request.GET and request.GET['next'] !='':
+                if request.GET and request.GET['next'] != '':
                     next = request.GET['next']
                     return HttpResponseRedirect(next)
                 else:
                     return redirect(reverse('home'))
             else:
-                user_form.add_error(None, "Your username or password are incorrect")
+                user_form.add_error(
+                    None, "Your username or password are incorrect")
     else:
         user_form = UserLoginForm()
 
@@ -56,13 +70,19 @@ def login(request):
 
 @login_required
 def profile(request):
-    """A view that displays the profile page of a logged in user with previous orders"""
+    """
+    A view that displays the profile page of a
+    logged in user with previous orders
+    """
+
     user_orders = Order.objects.filter(user=request.user)
     return render(request, 'profile.html', {"Orders": user_orders})
 
 
 def register(request):
-    """A view that manages the registration form"""
+    """
+    A view that manages the registration form
+    """
     if request.method == 'POST':
         user_form = UserRegistrationForm(request.POST)
         if user_form.is_valid():

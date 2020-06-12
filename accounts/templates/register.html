@@ -2,16 +2,17 @@
 {% load bootstrap_tags %}
 {% block content %}
 <div class="d-flex h-100% align-items-center mast_pages">
-      <div class="mx-auto text-center">
-    <form method="post" action="{% url 'register' %}" class="accountform">
-        <fieldset class="form-group">
-            <legend style="color: white">Create a new account</legend>
-            <p style="font-weight: bold; color: white">Already got an account? <a href="{% url 'login' %}"><kbd>Sign In</kbd></a></p>
-            {% csrf_token %}
-            {{  user_form | as_bootstrap }}
-            <button type="submit" class="btn btn-primary">Create account</button>
-        </fieldset>
-    </form>
-    </div>
-        </div>
+	<div class="mx-auto text-center">
+		<form method="post" action="{% url 'register' %}" class="accountform">
+			<fieldset class="form-group">
+				<legend style="color: white">Create a new account</legend>
+				<p style="font-weight: bold; color: white">Already got an account? <a
+						href="{% url 'login' %}"><kbd>Sign In</kbd></a></p>
+				{% csrf_token %}
+				{{  user_form | as_bootstrap }}
+				<button type="submit" class="btn btn-primary">Create account</button>
+			</fieldset>
+		</form>
+	</div>
+</div>
 {% endblock %}
