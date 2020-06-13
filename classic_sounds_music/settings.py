@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),
-                 ('8000-f213e40f-fc04-4f4b-b080-e52e77fc4ae9.ws-eu01.gitpod.io'), 'classic_sounds_music.herokuapp.com' ]
+                 ('8000-f213e40f-fc04-4f4b-b080-e52e77fc4ae9.ws-eu01.gitpod.io'), 'classic_sounds.herokuapp.com' ]
 
 
 # Application definition
