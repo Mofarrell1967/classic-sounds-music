@@ -17,6 +17,8 @@
 	<!-- Bootstrap core CSS -->
 	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
+
+
 	<!-- Custom fonts for this template -->
 	<link href="{% static 'css/all.min.css' %}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -29,6 +31,8 @@
 	<script src="{% static 'jquery/jquery.min.js' %}"></script>
 	{% block head_js %}
 	{% endblock head_js %}
+
+
 
 </head>
 
@@ -45,11 +49,13 @@
         <i class="fas fa-bars"></i>
       </button>
 
+
+
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<div class="display">
 					<form action="{% url 'search' %}" method="get">
 						<input type="text" name="q">
-						<button type="search">Search</button>
+						<button class="btn btn-primary home_buttons" type="search">Search</button>
 					</form>
 				</div>
 
@@ -64,6 +70,7 @@
 						</div>
 						{% endif %}
 					</div>
+
 
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
@@ -84,6 +91,11 @@
 
 						{% if user.is_authenticated %}
 						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="{% url 'profile' %}">
+								<h6 class="nav-text">Profile</h6>
+							</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link js-scroll-trigger" href="{% url 'view_cart' %}">
 								<h6 class="nav-text">Cart {% if product_count > 0 %}
 									<label class="badge badge-info">{{ product_count }}</label>{% endif %}</h6>
@@ -100,22 +112,40 @@
 							</a>
 						</li>
 
+
 				</div>
 
+
+
 				{% endif %}
+
 				</ul>
+
+
 
 			</div>
 		</div>
+
 	</nav>
 
+
+
+
+
+
+
+
+
 	{% block content %} {% endblock %}
+
+
 
 	<footer class="bg-black small text-center text-white-50">
 		<div class="container">
 			Copyright &copy; My Classic Sounds Website 2020
 		</div>
 	</footer>
+
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="{% static 'jquery/jquery.min.js' %}"></script>
@@ -126,6 +156,7 @@
 
 	<!-- Custom scripts for this template -->
 	<script src="{% static 'js/grayscale.js' %}"></script>
+
 
 </body>
 
