@@ -1,1 +1,1 @@
-web: gunicorn classic_sounds_music.wsgi.application
+web: gunicorn classic_sounds_music.wsgi:application
