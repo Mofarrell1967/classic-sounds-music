@@ -92,7 +92,12 @@
 						{% if user.is_authenticated %}
 						<li class="nav-item">
 							<a class="nav-link js-scroll-trigger" href="{% url 'profile' %}">
-								<h6 class="nav-text">Profile</h6>
+								<h6 class="nav-text">Account</h6>
+							</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="{% url 'logout' %}">
+								<h6 class="nav-text">Logout</h6>
 							</a>
 						</li>
 						<li class="nav-item">
@@ -101,11 +106,7 @@
 									<label class="badge badge-info">{{ product_count }}</label>{% endif %}</h6>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="{% url 'logout' %}">
-								<h6 class="nav-text">Logout</h6>
-							</a>
-						</li>
+						
 						<li class="nav-item">
 							<a class="nav-link js-scroll-trigger">
 								<h6 class="nav-text">Logged in as: {{ user }}</h6>
