@@ -27,7 +27,7 @@ def send_email(request):
     if subject and message and from_email:
         try:
             send_mail(subject, the_message, from_email,
-                      [os.environ.get('EMAIL')])
+                      [os.environ.get('EMAIL_ADDRESS')])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return render(request, 'contact_message.html')
