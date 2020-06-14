@@ -7,12 +7,32 @@
 <header class="mast_pages" style="padding-top: 100px">
 	<div class="container">
 		<div class="mx-auto text-center">
-			<h2 class="text-white-20 mx-auto mt-2 mb-5">Profile</h2>
+			<h2 class="text-white-20 mx-auto mt-2 mb-5">Account Details</h2>
 			<div class="row row-flex align-items-center">
 				<div class="row row-flex align-items-center">
 					{% if user.is_authenticated %}
 
-					<p>You are logged in as {{ user.email }} </p>
+					<div class="text-center w-responsive mx-auto mb-5">
+						<h4 class="font-weight-bold" style="padding-bottom: 20px">You are currently logged
+							into our
+							system as:</h4>
+
+
+						<p class="product-description"><span class="font-weight-bold"> User Email  :</span>
+							{{ user.email }}</p>
+						<p class="product-description">
+							<span class="font-weight-bold"> User Name  :</span> {{ user.username }}</p>
+
+					</div>
+					<p class="text-center w-responsive mx-auto mb-5">
+						We recommend you change your password often to ensure your security is maintained. To Update
+						your password please click on the link below
+					</p>
+
+
+					<a href="{% url 'password_reset' %}"
+						class="btn btn-primary js-scroll-trigger home_buttons text-center w-responsive mx-auto mb-5">Update
+						Password</a>
 
 					{% else %}
 					<a href="{% url 'login' %}" class="btn btn-primary js-scroll-trigger">Login</a>
