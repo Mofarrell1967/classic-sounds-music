@@ -4,36 +4,29 @@
 
 {% block content %}
 
-<header class="mast_pages" style="padding-top: 100px">
+<header class="mast_pages account_head1">
 	<div class="container">
 		<div class="mx-auto text-center">
 			<h2 class="text-white-20 mx-auto mt-2 mb-5">Account Details</h2>
 			<div class="row row-flex align-items-center">
 				<div class="row row-flex align-items-center">
 					{% if user.is_authenticated %}
-
 					<div class="text-center w-responsive mx-auto mb-5">
-						<h4 class="font-weight-bold" style="padding-bottom: 20px">You are currently logged
+						<h4 class="font-weight-bold  account_head1">You are currently logged
 							into our
 							system as:</h4>
-
-
 						<p class="product-description"><span class="font-weight-bold"> User Email  :</span>
 							{{ user.email }}</p>
 						<p class="product-description">
 							<span class="font-weight-bold"> User Name  :</span> {{ user.username }}</p>
-
 					</div>
 					<p class="text-center w-responsive mx-auto mb-5">
 						We recommend you change your password often to ensure your security is maintained. To Update
 						your password please click on the link below
 					</p>
-
-
 					<a href="{% url 'password_reset' %}"
 						class="btn btn-primary js-scroll-trigger home_buttons text-center w-responsive mx-auto mb-5">Update
 						Password</a>
-
 					{% else %}
 					<a href="{% url 'login' %}" class="btn btn-primary js-scroll-trigger">Login</a>
 					<a href="{% url 'register' %}" class="btn btn-primary js-scroll-trigger">Register</a>
@@ -44,22 +37,15 @@
 			<div class="container">
 				<div class="row panel-body shadow-lg p-3 mb-5 bg-white rounded panel_surround">
 
-
 					{% for order in Orders %}
-
 					<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel">
 						<div class="shadow-lg p-3 mb-5 bg-white rounded">
-
 							{% for item in order.item.all %}
 							<div class="font-weight-bold" style="text-decoration: underline">{{ item.order_date }}
 							</div>
-
-							<div class="product_cart"
-								style="background-image: url('{{ MEDIA_URL }}{{ item.product.image1 }}')">
+							<div class="product_cart">
 							</div>
-
 							<div class="caption">
-
 								<p>{{ item.product.name }}</p>
 								<p><span>Unit Price : </span><span>€{{ item.product.price }}</span></p>
 
@@ -68,11 +54,7 @@
 
 						</div>
 					</div>
-
-
 					{% endfor %}
 				</div>
-
-
 </header>
 {% endblock %}
