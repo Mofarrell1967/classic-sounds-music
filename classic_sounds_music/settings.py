@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+# import env
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -27,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),
-                 ('8000-f213e40f-fc04-4f4b-b080-e52e77fc4ae9.ws-eu01.gitpod.io'), 'classic-sounds.herokuapp.com' ]
+                 ('8000-f213e40f-fc04-4f4b-b080-e52e77fc4ae9.ws-eu01.gitpod.io'), 'classic-sounds.herokuapp.com']
 
 
 # Application definition
@@ -87,7 +88,8 @@ WSGI_APPLICATION = 'classic_sounds_music.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 if "DATABASE_URL" in os.environ:
-    DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+    DATABASES = {'default': dj_database_url.parse(
+        os.environ.get('DATABASE_URL'))}
 else:
     print("Database URL not found. Using SQLite instead")
     DATABASES = {
@@ -150,15 +152,8 @@ STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, "static"),
 )
-
-MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
-
-AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'accounts.backends.EmailAuth'
-]
 
 MEDIAFILES_LOCATION = 'media'
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
@@ -166,6 +161,12 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailAuth'
+]
 
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
