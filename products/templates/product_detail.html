@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% load staticfiles %} {% block content %}
 
-<header class="mast_pages" style="padding-top: 100px;">
+<header class="mast_pages product_layout">
   {% for product in products %}
 
   <div
@@ -30,24 +30,24 @@
     <div class="product-title text-left">
       <hr />
       <p class="text-center">
-        <span style="font-weight: bold;">Product Summary : </span
+        <span class="font-weight-bold">Product Summary : </span
         ><span>{{ product.description_summary }}</span>
       </p>
       <hr />
       <p class="text-center">
-        <span style="font-weight: bold;">Manufacturer : </span
+        <span class="font-weight-bold">Manufacturer : </span
         ><span>{{ product.maker }}</span>
       </p>
 
       <hr />
       <p class="text-center">
-        <span style="font-weight: bold;">Product Description : </span
+        <span class="font-weight-bold">Product Description : </span
         ><span>{{ product.description | linebreaks }}</span>
       </p>
 
       <hr />
       <p class="text-center">
-        <span style="font-weight: bold;">Unit Price : </span
+        <span class="font-weight-bold">Unit Price : </span
         ><span>€{{ product.price }}</span>
       </p>
       <hr />

@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% load staticfiles %} {% block content %}
 
-<header class="mast_pages" style="padding-top: 100px;">
+<header class="mast_pages product_layout">
   <div class="mx-auto text-center">
     <h2 class="text-white-20 mx-auto mt-2 mb-5">Guitars</h2>
 
@@ -34,7 +34,7 @@
     </p>
     <p>
       Already got an account?
-      <a href="{% url 'login' %}" style="font-weight: bold;"
+      <a href="{% url 'login' %}" class="font-weight-bold"
         ><kbd>Sign In</kbd></a
       >
       <a href="{% url 'register' %}"><kbd>Register for an account</kbd></a>
@@ -47,15 +47,14 @@
         class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel"
       >
         <div
-          class="panel-body shadow-lg p-3 mb-5 bg-white rounded"
-          style="background-color: #fff; margin: 10px; padding-bottom: 5px;"
+          class="panel-body shadow-lg p-3 mb-5 bg-white rounded guitar_panel"
         >
           <div
             class="product"
             style="background-image: url('{{ MEDIA_URL }}{{ product.image1 }}')"
           ></div>
 
-          <h3>{{ product.name }}</h3>
+          <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
           <p class="product-description">{{product.description_summary}}</p>
           <p>
             <a

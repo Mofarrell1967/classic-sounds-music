@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% load staticfiles %} {% block content %}
 
-<header class="mast_pages" style="padding-top: 100px;">
+<header class="mast_pages product_layout">
   <div class="mx-auto text-center">
     <h2 class="text-white-20 mx-auto mt-2 mb-5">Piano & Keyboards</h2>
 
@@ -33,7 +33,7 @@
     </p>
     <p>
       Already got an account?
-      <a href="{% url 'login' %}" style="font-weight: bold;"
+      <a href="{% url 'login' %}" class="font-weight-bold"
         ><kbd>Sign In</kbd></a
       >
       <a href="{% url 'register' %}"><kbd>Register for an account</kbd></a>
@@ -54,7 +54,7 @@
             style="background-image: url('{{ MEDIA_URL }}{{ product.image1 }}')"
           ></div>
 
-          <h3>{{ product.name }}</h3>
+          <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
           <p class="product-description">
             {{product.description|truncatewords:5}}
           </p>

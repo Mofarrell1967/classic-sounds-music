@@ -12,7 +12,7 @@
 </script>
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %} {% block content %}
-<header class="mast_pages" style="padding-top: 100px;">
+<header class="mast_pages checkout_head1">
   <div class="container">
     <div class="mx-auto text-center">
       <h2 class="text-white-20 mx-auto mt-2 mb-5">Checkout</h2>
@@ -41,7 +41,7 @@
         {% endfor %}
       </div>
       <!-- prettier-ignore -->
-      <div class="row" style="margin: 10px; padding: 10px">
+      <div class="row checkout_total">
 				<div style="font-size:30px">Total: € </div>
 				<div style="font-size:30px"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}
 				</div>
@@ -54,7 +54,6 @@
         action="{% url 'checkout' %}"
       >
         <legend>Payment Details</legend>
-
         <div id="credit-card-errors" style="display: none;">
           <div id="stripe-error-message"></div>
         </div>
@@ -62,7 +61,6 @@
           <div class="form-group col-md-6">
             {{ order_form |as_bootstrap }}
           </div>
-
           <div class="form-group col-md-6">
             {{ payment_form |as_bootstrap }}
           </div>

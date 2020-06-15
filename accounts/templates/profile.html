@@ -36,22 +36,20 @@
 			<h2 class="text-white-20 mx-auto mt-2 mb-5 text-center">Your Previous Orders</h2>
 			<div class="container">
 				<div class="row panel-body shadow-lg p-3 mb-5 bg-white rounded panel_surround">
-
 					{% for order in Orders %}
 					<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel">
 						<div class="shadow-lg p-3 mb-5 bg-white rounded">
 							{% for item in order.item.all %}
 							<div class="font-weight-bold" style="text-decoration: underline">{{ item.order_date }}
 							</div>
-							<div class="product_cart">
+							<div class="product_cart"
+								style="background-image: url('{{ MEDIA_URL }}{{ item.product.image1 }}')">
 							</div>
 							<div class="caption">
 								<p>{{ item.product.name }}</p>
 								<p><span>Unit Price : </span><span>€{{ item.product.price }}</span></p>
-
 							</div>
 							{% endfor %}
-
 						</div>
 					</div>
 					{% endfor %}
