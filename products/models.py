@@ -9,7 +9,7 @@ Model for the fields for the site products
 class Product(models.Model):
     name = models.CharField(max_length=254, default='')
     category = models.CharField(max_length=25, default='')
-    description_summary = models.TextField(default='')
+    description_summary = models.CharField(max_length=100, default='')
     model = models.CharField(max_length=50, default='')
     description = models.TextField(default='')
     maker = models.CharField(max_length=25, default='')
