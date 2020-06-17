@@ -18,10 +18,10 @@
 
 .product_cart {
   background-size: contain;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
 }
 
@@ -140,6 +140,7 @@ caption p {
 .home_buttons {
   padding: 5px;
   margin: 5px;
+  color: #fff;
 }
 
 .nav-text {
@@ -184,7 +185,7 @@ caption p {
 }
 
 .contact_head1 {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .contact_send {
@@ -203,4 +204,9 @@ caption p {
 
 product_layout {
   padding-top: 100px;
+}
+
+.btn btn-outline-secondary {
+  color: #fff;
+  width: 5px;
 }
