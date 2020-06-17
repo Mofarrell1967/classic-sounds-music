@@ -6,24 +6,24 @@
 
     <a
       href="{% url 'products' %}"
-      class="btn btn-primary js-scroll-trigger home_buttons"
+      class="btn btn-outline-secondary js-scroll-trigger home_buttons"
       >Collection</a
     >
     <a
       href="{% url 'guitars' %}"
-      class="btn btn-primary js-scroll-trigger home_buttons"
+      class="btn btn-outline-secondary js-scroll-trigger home_buttons"
       >Guitars</a
     >
     <a
       href="{% url 'percussion' %}"
-      class="btn btn-primary js-scroll-trigger home_buttons"
+      class="btn btn-outline-secondary js-scroll-trigger home_buttons"
       >Percussion</a
     >
 
     {% if user.is_authenticated %}
     <a
       href="{% url 'profile' %}"
-      class="btn btn-primary js-scroll-trigger home_buttons"
+      class="btn btn-outline-secondary js-scroll-trigger home_buttons"
       >Account</a
     >
     {% else %}
