@@ -45,9 +45,14 @@
 							<div class="product_cart"
 								style="background-image: url('{{ MEDIA_URL }}{{ item.product.image1 }}')">
 							</div>
+                            <div class="font-weight-bold" style="text-decoration: underline">{{ item.order_date }}
+							</div>
 							<div class="caption">
 								<p>{{ item.product.name }}</p>
+                                <p><span>Quantity: </span><span>{{ item.quantity }}</span></p>
 								<p><span>Unit Price : </span><span>€{{ item.product.price }}</span></p>
+                                
+                                
 							</div>
 							{% endfor %}
 						</div>
