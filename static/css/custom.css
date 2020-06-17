@@ -137,7 +137,7 @@ caption p {
   background-color: #c67605;
 }
 
-.home_buttons {
+.buttons {
   padding: 5px;
   margin: 5px;
   color: #fff;
@@ -204,9 +204,4 @@ caption p {
 
 product_layout {
   padding-top: 100px;
-}
-
-.btn btn-outline-secondary {
-  color: #fff;
-  width: 5px;
 }
