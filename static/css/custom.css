@@ -1,58 +1,4 @@
-.product {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-}
-
-.product_detail {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-}
-
-.product_cart {
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.profile_detail {
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 75px;
-  margin: 0 auto;
-}
-
-.panel_surround {
-  background-color: #fff;
-  margin: 10px;
-  padding-bottom: 5px;
-}
-
-.panel_size {
-  width: 400px;
-  height: 150px;
-}
-
-.product_checkout {
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
+/*Main Pages Styles*/
 
 .mast_pages {
   position: relative;
@@ -112,8 +58,48 @@ caption p {
   border: 1px solid #ddd;
 }
 
+/*Product Styles*/
+
+.product {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.product_detail {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.panel_surround {
+  background-color: #fff;
+  margin: 10px;
+  padding-bottom: 5px;
+}
+
+.panel_size {
+  width: 400px;
+  height: 150px;
+}
+
+.product_checkout {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
 .product-description {
   min-height: 20px;
+  font-size: 10px;
 }
 
 .icon-bar {
@@ -202,6 +188,13 @@ caption p {
   padding-bottom: 5px;
 }
 
-product_layout {
-  padding-top: 100px;
+.product_layout {
+  padding-top: 20px;
+}
+
+.orders_empty {
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
 }
