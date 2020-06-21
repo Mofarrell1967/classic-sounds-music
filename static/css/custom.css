@@ -61,6 +61,7 @@ caption p {
 /*Product Styles*/
 
 .product {
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 250px;
@@ -97,9 +98,23 @@ caption p {
   margin: 0 auto;
 }
 
+.product_name {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
+
 .product-description {
   min-height: 20px;
-  font-size: 10px;
+  font-size: 20px;
+}
+
+.p_name {
+  font-size: 24;
+}
+
+.product_layout {
+  padding-top: 150px;
 }
 
 .icon-bar {
