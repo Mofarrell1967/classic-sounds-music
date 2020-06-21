@@ -6,16 +6,22 @@
 <header class="masthead">
 	<div class="d-flex h-100 align-items-center">
 		<div class="mx-auto text-center">
-			<h1 class="mx-auto my-0 text-uppercase">Classic Sounds</h1>
-			<h2 class="text-white-50 mx-auto mt-2 mb-5">The definitive source of high end professional instruments.</h2>
+
+
+
+			<h1 class="mx-auto my-0 text-uppercase">Classic Sounds</h1><br>
+			<h2 class="text-white-50 mx-auto mt-2 mb-5">The definitive collection of high end professional musical instruments.</h2>
+
+
 			<div class="container">
 
+
+
 				{% if user.is_authenticated %}
-				<a href="{% url 'products' %}" class="btn btn-primary js-scroll-trigger home_buttons">Collection</a>
-				<a href="{% url 'guitars' %}" class="btn btn-primary js-scroll-trigger home_buttons">Guitars</a>
-				<a href="{% url 'percussion' %}" class="btn btn-primary js-scroll-trigger home_buttons">Percussion</a>
-				<a href="{% url 'keyboards' %}" class="btn btn-primary js-scroll-trigger home_buttons">Keyboards</a>
-                <a href="{% url 'profile' %}" class="btn btn-primary js-scroll-trigger home_buttons">Profile</a>
+				<a href="{% url 'products' %}" class="btn btn-outline-secondary js-scroll-trigger button_text" style="color: #fff;">The Collection</a>
+				<a href="{% url 'guitars' %}" class="btn btn-outline-secondary js-scroll-trigger button_text" style="color: #fff;">Guitars</a>
+				<a href="{% url 'percussion' %}" class="btn btn-outline-secondary js-scroll-trigger button_text" style="color: #fff;">Percussion</a>
+				<a href="{% url 'keyboards' %}" class="btn btn-outline-secondary js-scroll-trigger button_text" style="color: #fff;">Keyboards</a>
 
 				{% else %}
 				<a href="{% url 'login' %}" class="btn btn-primary js-scroll-trigger">Login</a>
@@ -23,7 +29,10 @@
 				{% endif %}
 			</div>
 		</div>
+
 </header>
+
+
 
 <!-- About Section -->
 <section id="about" class="about-section text-center">
@@ -32,16 +41,17 @@
 			<div class="col-lg-8 mx-auto">
 				<h2 class="text-white mb-4">About Classic Sounds</h2>
 				<p class="text-white-50">Classic Sounds is an Irish on-line store that sources and sells high end
-					professional instruments. Our collection covers guitars, percussion and keyboards
-					and we stock a wide range of products from the best musical manufacturers and designers from all
-					over the globe.</p>
+					professional instruments. Our passion is music and we have spent many years aiming to understand
+                    the needs of professional musicians or studio environments.<br> <br>Classic Sounds sources only the highest quality
+                    instruments to give customers a single place to find the equipment they need and
+                    our collection covers guitars, percussion and keyboards	and we stock a wide range of products 
+                    from the best musical manufacturers and designers from all over the globe.</p>
 			</div>
 		</div>
-		<img src="static/img/about.jpg" class="img-fluid" style="padding-bottom:50px" alt="">
+		<img src="https://classic-sounds.s3-eu-west-1.amazonaws.com/static/img/about.jpg" class="img-fluid" style="padding-bottom:50px" alt="">
     </div>
 </section>
 <div style="width:100%; height:3px; background-color:#1B230E"></div>
-
 <!-- Projects Section -->
 <section id="projects" class="projects-section bg-light">
 	<div class="container">
@@ -49,16 +59,15 @@
 		<!-- All Instruments -->
 		<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
 			<div class="col-lg-6">
-				<img class="img-fluid" src="static/img/all.jpg" alt="">
+				<img class="d-flex h-100 w-100" src="https://classic-sounds.s3-eu-west-1.amazonaws.com/static/img/all.jpg" alt="">
         </div>
 				<div class="col-lg-6 order-lg-first">
 					<div class="bg-black text-center h-100 project">
 						<div class="d-flex h-100">
 							<div class="project-text w-100 my-auto text-center text-lg-right">
-								<h4 class="text-white">Collection</h4>
-								<p class="mb-0 text-white-50">Another example of a project with its respective
-									description. These sections work well responsively as well, try this theme on a
-									small screen!</p>
+								<h4 class="text-white"> The Collection</h4>
+								<p class="mb-0 text-white-50">View the entire collection of instruments currently in stock.
+                                New products are always being added so remember to check back often!</p>
 								<br>
 								<a href="{% url 'products' %}" class="btn btn-primary js-scroll-trigger">View
 									Collection</a>
@@ -70,10 +79,10 @@
 				</div>
 			</div>
 
-			<!-- Guitar Section -->
+			<!-- Guitars -->
 			<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
 				<div class="col-lg-6">
-					<img class="img-fluid" src="static/img/Guitars.jpg" alt="">
+					<img class="d-flex h-100 w-100" src="https://classic-sounds.s3-eu-west-1.amazonaws.com/static/img/Guitars.jpg" alt="">
         </div>
 					<div class="col-lg-6">
 						<div class="bg-black text-center h-100 project">
@@ -95,19 +104,19 @@
 					</div>
 				</div>
 
-				<!-- Percussion Section -->
+				<!-- Percussion -->
 				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
 					<div class="col-lg-6">
-						<img class="img-fluid" src="static/img/drums.jpg" alt="">
+						<img class="d-flex h-100 w-100" src="https://classic-sounds.s3-eu-west-1.amazonaws.com/static/img/drums.jpg" alt="">
         </div>
 						<div class="col-lg-6 order-lg-first">
 							<div class="bg-black text-center h-100 project">
 								<div class="d-flex h-100">
 									<div class="project-text w-100 my-auto text-center text-lg-right">
 										<h4 class="text-white">Percussion</h4>
-										<p class="mb-0 text-white-50">Another example of a project with its respective
-											description. These sections work well responsively as well, try this theme
-											on a small screen!</p>
+										<p class="mb-0 text-white-50">We stock professional level electronic &
+                                        accoustic percussion kits and cymbals from all the major makers along 
+                                        with one off signature releases</p>
 										<br>
 										<a href="{% url 'percussion' %}" class="btn btn-primary js-scroll-trigger">View
 											Percussion</a>
@@ -119,18 +128,19 @@
 						</div>
 					</div>
 
-					<!-- Keyboard Section -->
+					<!-- Keyboards -->
 					<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
 						<div class="col-lg-6">
-							<img class="img-fluid" src="static/img/keyboard.jpg" alt="">
+							<img class="d-flex h-100 w-100" src="https://classic-sounds.s3-eu-west-1.amazonaws.com/static/img/keyboard.jpg" alt="">
         </div>
 							<div class="col-lg-6">
 								<div class="bg-black text-center h-100 project">
 									<div class="d-flex h-100">
 										<div class="project-text w-100 my-auto text-center text-lg-left">
 											<h4 class="text-white">Keyboards</h4>
-											<p class="mb-0 text-white-50">An example of where you can put an image of a
-												project, or anything else, along with a description.</p>
+											<p class="mb-0 text-white-50">View our range of top of the line keyboards, pianos
+                                            and synthesizers. From modules to baby grands, we cover the full spectrum of keyboard
+                                            requirements.</p>
 											<br>
 											<a href="{% url 'keyboards' %}"
 												class="btn btn-primary js-scroll-trigger">View Keyboards</a>
@@ -143,9 +153,7 @@
 							</div>
 						</div>
 </section>
-
 <div style="width:100%; height:3px; background-color:#1B230E"></div>
-
 <!-- Signup Section -->
 <section id="signup" class="signup-section">
 	<div class="container">
@@ -153,13 +161,12 @@
 	</div>
 </section>
 
-<!-- Contact Section -->
+ 
 
+<!-- Contact Section -->
 <section class="contact-section bg-black">
 	<div class="container">
-
 		<div class="row">
-
 			<div class="col-md-4 mb-3 mb-md-0">
 				<div class="card py-4 h-100">
 					<div class="card-body text-center">
@@ -178,7 +185,7 @@
 						<h4 class="text-uppercase m-0">Email</h4>
 						<hr class="my-4">
 						<div class="small text-black-50">
-							<a href="#">info@classic.com</a>
+							<a href="{% url 'contact' %}">info@classic.com</a>
 						</div>
 					</div>
 				</div>
@@ -210,6 +217,7 @@
 
 	</div>
 </section>
+
 
 
 {% endblock %}
