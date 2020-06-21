@@ -47,7 +47,7 @@ def checkout(request):
 
             if customer.paid:
                 messages.error(
-                    request, "Order was successful - see Order History for details!")
+                    request, "Order was successful")
                 request.session['cart'] = {}
                 return redirect(reverse('profile'))
             else:
