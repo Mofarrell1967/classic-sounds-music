@@ -109,12 +109,22 @@ caption p {
   font-size: 20px;
 }
 
-.p_name {
-  font-size: 24;
+.product_heading {
+  padding-top: 100px;
+}
+
+.guitar_panel {
+  background-color: #fff;
+  margin: 10px;
+  padding-bottom: 5px;
 }
 
 .product_layout {
   padding-top: 150px;
+}
+
+read_more {
+  font-size: 24;
 }
 
 .icon-bar {
@@ -195,16 +205,6 @@ caption p {
 
 .message_response {
   padding-top: 400px;
-}
-
-.guitar_panel {
-  background-color: #fff;
-  margin: 10px;
-  padding-bottom: 5px;
-}
-
-.product_layout {
-  padding-top: 20px;
 }
 
 .orders_empty {
