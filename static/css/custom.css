@@ -110,17 +110,13 @@ caption p {
 }
 
 .product_heading {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .guitar_panel {
   background-color: #fff;
   margin: 10px;
   padding-bottom: 5px;
-}
-
-.product_layout {
-  padding-top: 150px;
 }
 
 read_more {
