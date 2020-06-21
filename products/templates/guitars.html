@@ -2,7 +2,7 @@
 
 <header class="mast_pages product_layout">
   <div class="mx-auto text-center">
-    <h2 class="text-white-20 mx-auto mt-2 mb-5">Guitars</h2>
+    <h2 class="product_heading text-white-20 mx-auto mt-2 mb-5">Guitars</h2>
 
     <a
       href="{% url 'products' %}"
@@ -23,79 +23,64 @@
       >Keyboards</a
     >
 
-    {% if user.is_authenticated %}
-
-    <a
-      href="{% url 'profile' %}"
-      class="btn btn-outline-secondary js-scroll-trigger home_buttons"
-      style="color: #fff;"
-      >Account</a
-    >
-    {% else %}
-    <p>
-      You must be registered and logged into your account to add to cart or make
-      purchases.
-    </p>
-    <p>
-      Already got an account?
-      <a href="{% url 'login' %}" class="font-weight-bold"
-        ><kbd>Sign In</kbd></a
-      >
-      <a href="{% url 'register' %}"><kbd>Register for an account</kbd></a>
-    </p>
-    {% endif %}
-
-    <div class="row row-flex align-items-center">
-      {% for product in products %}
-      <div
-        class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel"
-      >
+    <div class="container-fluid">
+      <div class="row row-flex align-items-center">
+        {% for product in products %}
         <div
-          class="panel-body shadow-lg p-3 mb-5 bg-white rounded guitar_panel"
+          class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel"
         >
           <div
-            class="product"
-            style="background-image: url('{{ MEDIA_URL }}{{ product.image1 }}')"
-          ></div>
+            class="panel-body shadow-lg p-3 mb-5 bg-white rounded panel_surround"
+          >
+            <div
+              class="product"
+              style="background-image: url('{{ MEDIA_URL }}{{ product.image1}}')"
+            ></div>
 
-          <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
-          <p class="product-description">{{product.description_summary}}</p>
-          <p>
-            <a
-              href="{% url 'product_detail' product.id %}"
-              class="btn btn-primary"
-              >Read more</a
-            >
-          </p>
-          <p>€{{ product.price }}</p>
+            <p class="product_name">{{ product.name }}</p>
 
-          <form method="post" action="{% url 'add_to_cart' product.id %}">
-            {% csrf_token %}
-            <div class="input-group">
-              <input
-                name="quantity"
-                type="number"
-                min="1"
-                max="999"
-                class="form-control"
-                value="1"
-                placeholder="Quantity"
-              />
-              <span class="input-group-btn">
-                <button
-                  class="btn btn-primary"
-                  style="padding: 10px;"
-                  type="submit"
-                >
-                  Add
-                </button>
-              </span>
+            <p>{{product.description_summary}}</p>
+
+            <p>€{{ product.price }}</p>
+
+            <div>
+              <a
+                href="{% url 'product_detail' product.id %}"
+                class="read_more"
+                style="align: right;"
+              >
+                Read more >></a
+              >
             </div>
-          </form>
-        </div>
-      </div>
 
-      {% endfor %}
+            <form method="post" action="{% url 'add_to_cart' product.id %}">
+              {% csrf_token %}
+              <div class="input-group">
+                <input
+                  name="quantity"
+                  type="number"
+                  min="1"
+                  max="999"
+                  class="form-control"
+                  value="1"
+                  placeholder="Quantity"
+                />
+                <span class="input-group-btn">
+                  <button
+                    class="btn btn-primary"
+                    style="padding: 10px;"
+                    type="submit"
+                  >
+                    Add
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
     </div>
   </div>
   <div class="page_color">
@@ -104,9 +89,7 @@
       <div class="pagination">
         <span class="step-links">
           {% if products.has_previous %}
-          <a
-            href="?page={{ products.previous_page_number }}"
-            class="btn btn-primary js-scroll-trigger home_buttons no-margin"
+          <a href="?page={{ products.previous_page_number }}" class=""
             >Previous</a
           >
           {% endif %}
@@ -114,11 +97,7 @@
             Page {{ products.number }} of {{ products.paginator.num_pages }}
           </span>
           {% if products.has_next %}
-          <a
-            href="?page={{ products.next_page_number }}"
-            class="btn btn-primary js-scroll-trigger home_buttons no-margin"
-            >Next</a
-          >
+          <a href="?page={{ products.next_page_number }}" class="">Next</a>
           {% endif %}
         </span>
       </div>
