@@ -142,9 +142,7 @@ Taken from google fonts
 
 ### Wireframes
 
-Initial wireframing templates for this project can be viewed [here]
-
-All of my wireframes for this project can be found [here](https://github.com/stephyraju/ticktockwatches/tree/master/documents/wireframes)
+All wireframes for this project can be found [here](https://github.com/stephyraju/ticktockwatches/tree/master/documents/wireframes)
 
 ---
 
@@ -452,21 +450,7 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 
 **Content**
 
-All the product details, images and the contents for the services and policies are from https://www.watchshop.com/, https://www.fields.ie/ & Wikipedia and I modifed to use in the project.
-
-**Tutorials**
-
-- [Python Django Tutorial by Corey Schafer](https://www.youtube.com/watch?v=F5mRW0jo-U4)
-
-- [https://stackoverflow.com/questions/12758786/redirect-return-to-same-previous-page-in-django/12758859](https://stackoverflow.com/questions/12758786/redirect-return-to-same-previous-page-in-django/12758859)
-
-- The [Django documentation](https://devdocs.io/django~1.11/)
-
-### Acknowledgement
-
 The tutors, mentors and support staff at Code Institute
-
-Special thanks to Guido Cecilio Garcia, my Code Institute mentor, for his guidance and advice whilst working on this project.
 
 **Disclaimer**
 
