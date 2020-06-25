@@ -142,9 +142,7 @@ Taken from google fonts
 
 ### Wireframes
 
-All wireframes for this project can be found [here](https://github.com/stephyraju/ticktockwatches/tree/master/documents/wireframes)
-
----
+Initial wireframing templates for this project can be viewed [here]
 
 ## Features
 
