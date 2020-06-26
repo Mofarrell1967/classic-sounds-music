@@ -467,16 +467,16 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 
 5)  In Heroku click on settings and then Reveal Config Vars and add the following from the env.py file.
 
-| Key Name              | Value      |
-| --------------------- | ---------- |
-| STRIPE_PUBLISHABLE    | secret key |
-| STRIPE_SECRET         | secret key |
-| DATABASE_URL          | secret key |
-| SECRET_KEY            | secret key |
-| AWS_ACCESS_KEY_ID     | secret key |
-| AWS_SECRET_ACCESS_KEY | secret key |
-| EMAIL                 | secret key |
-| EMAIL_PW              | secret key |
+| Key Name              | Value                        |
+| --------------------- | ---------------------------- |
+| STRIPE_PUBLISHABLE    | <your_stripe_publishable>    |
+| STRIPE_SECRET         | <your_stripe_secret>         |
+| DATABASE_URL          | <your_postgres_database url> |
+| SECRET_KEY            | <your_secret_key>            |
+| AWS_ACCESS_KEY_ID     | <your_secret_key>            |
+| AWS_SECRET_ACCESS_KEY | <your_secret_key>            |
+| EMAIL                 | <your_email_address>         |
+| EMAIL_PW              | <your_password>              |
 
 6.  Connect the Heroku app to the GitHub
 7.  In Heroku select Deploy Branch
