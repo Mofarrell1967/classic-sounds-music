@@ -1,8 +1,10 @@
-# [Classic Sounds](https://classic-sounds.herokuapp.com/)
+# Final Milestone Project - Full Stack Frameworks with Django
 
-Final Milestone Project - Full Stack Frameworks with Django
+Link to live demo [Classic Sounds](https://classic-sounds.herokuapp.com/) "Classic Sounds")
 
 The purpose of the project is to showcase the skills learnt throughout this course and to test capabilities in creating a functioning e-commerce site.
+
+![Login Page](/media/images/Auth.jpg)
 
 ---
 
@@ -11,6 +13,11 @@ The purpose of the project is to showcase the skills learnt throughout this cour
 **1. [UX](#ux)**
 
 - [User Stories](#user-stories)
+  - [Site Look & Feel](#Site)
+  - [Account Function](#account)
+  - [Product Function](#product)
+  - [Cart Function](#cart)
+  - [Checkout Function](#checkout)
 - [Design](#design)
   - [Framework](#framework)
   - [Color Scheme](#color-scheme)
