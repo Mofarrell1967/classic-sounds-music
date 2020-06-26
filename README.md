@@ -161,6 +161,8 @@ what can be found in those sections.
 The Contacts section displays the means of contacting Classic Sounds along with Soical Media buttons and also provides the user
 with a email information request link.
 
+![Home Page](/media/images/Classic-Sounds.jpg)
+
 ### Accounts App
 
 The accounts app will allow users to register and create their own unique account.
@@ -173,9 +175,15 @@ login by using the login form with their username and password or with their ema
 The users can also reset their password if they forgot the original password using the reset
 password link on the login.html page.
 
+![Login Page](/media/images/Login.jpg)
+
+![Login Page](/media/images/Auth.jpg)
+
 ### Products App
 
 Displays all Products available in the store that can be purchased by authenticated users.
+
+![Login Page](/media/images/products.jpg)
 
 **products.html**
 
@@ -236,6 +244,8 @@ The shopping cart page displays the summary details of all the items added to th
 - Total Cart amount
 - Button links to Checkout or Shop
 
+![Login Page](/media/images/cart.jpg)
+
 ### Checkout App
 
 **checkout.html**
@@ -251,11 +261,15 @@ If there is an error with the payment, the user will be notified with an error m
 Open successful completion of a purchase the user will be rediected to the accounts page where details of purchases
 will be displayed.
 
+![Login Page](/media/images/checkout.jpg)
+
 ### Account/Profile App
 
 This app displays the current login credentials in use on the site and an option to update the password.
 
 The page also displays historical purchases or a message to say there are no orders should none have been made to date.
+
+![Login Page](/media/images/account.jpg)
 
 ### Contacts App
 
