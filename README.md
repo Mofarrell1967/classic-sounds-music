@@ -1,6 +1,6 @@
 # Final Milestone Project - Full Stack Frameworks with Django
 
-Link to live demo [Classic Sounds](https://classic-sounds.herokuapp.com/) "Classic Sounds")
+Link to live demo [Classic Sounds](https://classic-sounds.herokuapp.com/)
 
 The purpose of the project is to showcase the skills learnt throughout this course and to test capabilities in creating a functioning e-commerce site.
 
@@ -13,36 +13,50 @@ The purpose of the project is to showcase the skills learnt throughout this cour
 **1. [UX](#ux)**
 
 - [User Stories](#user-stories)
-  - [Site Look & Feel](#Site)
-  - [Account Function](#account)
-  - [Product Function](#product)
-  - [Cart Function](#cart)
-  - [Checkout Function](#checkout)
+
+  - [Site Look & Feel](#Site-Look-&-Feel)
+  - [Account Function](#Account-functions)
+  - [Product Function](#Product-functions)
+  - [Cart Function](#Cart-functions)
+  - [Checkout Function](#Checkout-functions)
+
 - [Design](#design)
-  - [Framework](#framework)
+  - [Framework](#Framework-Technologies)
   - [Color Scheme](#color-scheme)
-- [Wireframes](#wireframes)
+  - [Icons](#Icons)
+  - [Typeography](#Typeography)
+  - [Wireframes](#Wireframes)
 
 **2. [Features](#features)**
 
-- [Existing Features](#existing-features)
-- [Features Left to Implement](#features-left-to-implement)
+- [Home App](#Home-App)
+- [Account App](#Accounts-App)
+- [Products App](#Products-App)
+- [Cart App](#Cart-App)
+- [Checkout App](#Checkout-App)
+- [Profile App](#Account/Profile=App)
+- [Contacts App](#Contacts=App)
+- [Search App](#Search-App)
+- [Base Template](#Base-Template)
 
-**3. [Technologies Used](#technologies-used)**
+**3. [Testing](#Testing)**
 
-- [Front-End Technologies](#front-end-technologies)
-- [Back-End Technologies](#back-end-technologies)
+- [Validation Services](#Validation-Services)
+- [Travis](#Travis)
+- [Manual Testing](#Manual-Testing)
+- [Found issues](#Found-issues)
+- [User & Stripe payment testing](#User-&-Stripe-payment-testing)
+- [Responsiveness](#Responsiveness)
 
-**4. [Testing](#testing)**
+**4. [Planned Features](#Planned-Features)**
 
-**5. [Github Repository](#github-repository)**
+**5. [Deployment](#Deployment)**
 
-**6. [Deployment](#deployment)**
+- [Prerequisite before deploying](#Prerequisite-before-deploying)
+- [Running Code Locally](#Running-Code-Locally)
+- [Running Code on Heroku](#Running-Code-on-Heroku)
 
-- [Local Deployment](#how-to-run-this-project-locally)
-- [Heroku Deployment](#heroku-deployment)
-
-**7. [Credits](#credits)**
+**6. [Credits](#Credits)**
 
 ---
 
@@ -149,7 +163,7 @@ Taken from google fonts
 
 ### Wireframes
 
-Initial wireframing templates for this project can be viewed [here]
+Initial wireframing templates for this project can be viewed [here](https://github.com/Mofarrell1967/classic-sounds-music/blob/master/static/wireframes/testing%20results.pdf)
 
 ## Features
 
@@ -305,7 +319,7 @@ Navbar shows;
 - Cart link (shown as icon) and only when user is authorised
 - Logout (shown as icon) and only when user is authorised and logged in
 
-Any page messages will also be displayed in the navbar
+Any page messages will also be displayed in the navbar.
 
 **Footer**
 
