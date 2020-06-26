@@ -27,7 +27,7 @@ The purpose of the project is to showcase the skills learnt throughout this cour
   - [Typeography](#Typeography)
   - [Wireframes](#Wireframes)
 
-**2. [Features](#features)**
+**2. [Features](#Features)**
 
 - [Home App](#Home-App)
 - [Account App](#Accounts-App)
@@ -63,7 +63,7 @@ The purpose of the project is to showcase the skills learnt throughout this cour
 ## UX
 
 The purpose of the project was to create a website using the Full Stack Framework.
-I chose to create an online musical unstrument shop where the store can display, showcase and sell their products.
+I chose to create an online musical instrument shop where the store can display, showcase and sell their products.
 The design of the site was intended to present the product offerings in a more creative setting that was more
 in line with the store mission and move away from generic on-line store formats.
 
@@ -92,7 +92,7 @@ Users require, at a minimum, the following functionality
 - A view of all products with filter to each category type.
 - I want to be able search for a product.
 - A link from a product to a detailed view of the product with all relevent information and images.
-- I want to be able add products to my cart and remove if I change my mind.
+- I want to be able add products to my cart and remove samehttps://themes.getbootstrap.com/ if I change my mind.
 
 ### Cart functions
 
@@ -112,7 +112,7 @@ The site design looked to differentiate Classic Sounds from generic e-commerce s
 a more artisan feel to it. I chose 'greyscale' as a theme so as to give subtle colouring to all displays
 with the exception of the product images. This was done so that the user would be drawn to those sections of
 the site. The greyscale theme was taken from the Bootstrap site and amended to suit the ideals of the site with
-light-to-dark trasnsitions on the pages without background images.
+light-to-dark transitions on the pages without background images.
 
 The hope of the final design was that users or those just browsing would find Classic-Sounds a little bit
 separated from the norm.
@@ -395,7 +395,11 @@ Desktop - Firefox v.67
 
 Features planned for version 2 of site are;
 
-1. 2. 3. 4. 5.
+1.  Correction of bugs identified in "Found Issues" section above.
+2.  Replace current messaging with Toastr.
+3.  Add Wishlist to product pages.
+4.  Create Admin Panel for superusers to manage database from within the application itself.
+5.  Add a 'Buy Again' option to the Order History section.
 
 # Deployment
 
@@ -483,7 +487,17 @@ os.environ.setdefault("EMAILJS_USER", "<enter key here>")
 
 **Content**
 
-The tutors, mentors and support staff at Code Institute
+Content for the products are from https://www.gear4music.ie/ and were modified for use in the project.
+Theme design was sourced and influenced by https://themes.getbootstrap.com/
+
+**Acknowledgement**
+
+The tutors, mentors and support staff at Code Institute.
+
+Special thanks to;
+Tutor Stephen Moody for his constant education and support.
+Mentor Maranatha Ilesanmi for his guidance and advice throughout this learning experience.
+Fellow student Paul Dardis for assistance on the Pagination code.
 
 **Disclaimer**
 
