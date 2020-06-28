@@ -242,6 +242,8 @@ Users can add the product to the cart.
 
 On this page the user can see all the details about the product.
 
+![Product Detail](/media/images/detail.jpg)
+
 - Product name
 - Images of product
 - Summary Description
