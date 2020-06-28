@@ -42,6 +42,10 @@ caption p {
   word-wrap: break-word;
 }
 
+.icon-bar {
+  background-color: #fff;
+}
+
 .row.row-flex {
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +68,11 @@ caption p {
 
 .search_position {
   padding-bottom: 20px;
+}
+
+.nav-text {
+  color: #4d4d4d;
+  font-weight: bold;
 }
 
 /*Product Styles*/
@@ -131,12 +140,25 @@ caption p {
   font-size: 24;
 }
 
-.icon-bar {
-  background-color: #fff;
-}
+/*Account Styles*/
 
 .accountform {
   padding-top: 20px;
+}
+
+.account_head1 {
+  padding-top: 100px;
+}
+
+.account_head2 {
+  padding-bottom: 20px;
+}
+
+.orders_empty {
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
 }
 
 .badge {
@@ -158,22 +180,11 @@ caption p {
   color: #fff;
 }
 
-.nav-text {
-  color: #4d4d4d;
-  font-weight: bold;
-}
-
 .page_color {
   color: #fff;
 }
 
-.account_head1 {
-  padding-top: 100px;
-}
-
-.account_head2 {
-  padding-bottom: 20px;
-}
+/*Cart Styles*/
 
 .cart_head1 {
   padding-top: 300px;
@@ -184,6 +195,17 @@ caption p {
   margin: 10px;
   padding-bottom: 5px;
 }
+
+.product_cart {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+/*Checkout Styles*/
 
 .checkout_head1 {
   padding-top: 100px;
@@ -198,6 +220,8 @@ caption p {
   padding-top: 100px;
 }
 
+/*Contact Styles*/
+
 .contact_head1 {
   padding-top: 50px;
 }
@@ -207,21 +231,9 @@ caption p {
 }
 
 .message_response {
-  padding-top: 400px;
+  padding-top: 530px;
 }
 
-.orders_empty {
-  font-weight: 700;
-  text-align: center;
-  color: #fff;
-  font-size: 30px;
-}
-
-.product_cart {
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
+.contact_style {
+  padding-bottom: 145px;
 }
