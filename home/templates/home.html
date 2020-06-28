@@ -7,15 +7,9 @@
 	<div class="d-flex h-100 align-items-center">
 		<div class="mx-auto text-center">
 
-
-
 			<h1 class="mx-auto my-0 text-uppercase">Classic Sounds</h1><br>
 			<h2 class="text-white-50 mx-auto mt-2 mb-5">The definitive collection of high end professional musical instruments.</h2>
-
-
 			<div class="container">
-
-
 
 				{% if user.is_authenticated %}
 				<a href="{% url 'products' %}" class="btn btn-outline-secondary js-scroll-trigger button_text" style="color: #fff;">The Collection</a>
@@ -29,7 +23,6 @@
 				{% endif %}
 			</div>
 		</div>
-
 </header>
 
 
@@ -116,7 +109,7 @@
 										<h4 class="text-white">Percussion</h4>
 										<p class="mb-0 text-white-50">We stock professional level electronic &
                                         accoustic percussion kits and cymbals from all the major makers along 
-                                        with one off signature releases</p>
+                                        with one off signature releases.</p>
 										<br>
 										<a href="{% url 'percussion' %}" class="btn btn-primary js-scroll-trigger">View
 											Percussion</a>
@@ -161,7 +154,6 @@
 	</div>
 </section>
 
- 
 
 <!-- Contact Section -->
 <section class="contact-section bg-black">
@@ -217,7 +209,5 @@
 
 	</div>
 </section>
-
-
 
 {% endblock %}
